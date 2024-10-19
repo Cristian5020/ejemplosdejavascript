@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de JavaScript por Categorías</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Ejemplos de JavaScript por Categorías</h1>
+    </header>
+
+    <main>
+        <!-- Categoría de Funciones -->
+        <section id="funciones">
+            <h2>Funciones</h2>
+            <ol>
+                <li>
+                    <strong>Sumar dos números:</strong> 
+                    <button onclick="sumar()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Saludar a una persona:</strong> 
+                    <button onclick="saludar()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Calcular el área de un círculo:</strong> 
+                    <button onclick="pedirradio()">Ejecutar</button>
+                </li>
+                <li>
+                    <form onsubmit="return procesarNum();">
+                        <strong >Ingresa dos números y ve cual es el mayor de ellos. 
+                            <form >
+                                <button type="submit">Ejecutar</button><br>
+                                <label for="numero1"> Primer número</label>
+                                <input type="number" id="numero1" required><br><br>
+
+                                <label for="numero2"> Segundo número</label>
+                                <input type="number" id="numero2" required><br><br>
+                            </form>
+                        </strong>
+                    </form>
+                </li>
+                <li>
+                    <form onsubmit="return inNum();">
+                        <strong >Ingresa un número y ve si es par o impar:
+                            <form >
+                                <button type="submit">Ejecutar</button><br>
+                                <label for="num"> Número</label>
+                                <input type="number" id="num" required><br><br>
+
+                            </form>
+                        </strong>
+                    </form>
+                </li>
+                <li>
+                    <form onsubmit="return proceso();">
+                        <strong >Ingresa cuatro datos númericos para saber el promedio de ellos:
+                            <form >
+                                <button type="submit">Ejecutar</button><br>
+
+                                <label for="num1"> Dato 1</label>
+                                <input type="number" id="num1" required><br><br>
+
+                                <label for="num2"> Dato 2</label>
+                                <input type="number" id="num2" required><br><br>
+                                
+                                <label for="num3"> Dato 3</label>
+                                <input type="number" id="num3" required><br><br>
+
+                                <label for="num4"> Dato 4</label>
+                                <input type="number" id="num4" required><br><br>
+
+                            </form>
+                        </strong>
+                    </form>
+                </li>
+
+
+            </ol>
+        </section>
+
+        <!-- Categoría de Condicionales -->
+        <section id="condicionales">
+            <h2>Condicionales</h2>
+            <ul>
+                <li>
+                    <strong>Calificación por nota:</strong> 
+                    <button onclick="ejecutarCalificacionNota()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Mostrar día de la semana:</strong> 
+                    <button onclick="ejecutarMostrarDia()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Verificar semáforo:</strong> 
+                    <button onclick="ejecutarVerificarSemaforo()">Ejecutar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Operador ternario -->
+        <section id="ternario">
+            <h2>Operador Ternario</h2>
+            <ul>
+                <li>
+                    <strong>Verificar si es mayor de edad:</strong> 
+                    <button onclick="ejecutarEsMayorDeEdad()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Verificar si es par o impar:</strong> 
+                    <button onclick="ejecutarEsParOImpar()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Mostrar el número mayor:</strong> 
+                    <button onclick="ejecutarMayorNumero()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Mostrar la temperatura:</strong> 
+                    <button onclick="ejecutarMostrarTemperatura()">Ejecutar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Ciclos -->
+        <section id="ciclos">
+            <h2>Ciclos</h2>
+            <ul>
+                <li>
+                    <strong>Mostrar números del 1 al 10:</strong> 
+                    <button onclick="ejecutarMostrarNumeros()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Suma de números hasta 100:</strong> 
+                    <button onclick="ejecutarSumaHasta100()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Tabla de multiplicar:</strong> 
+                    <button onclick="ejecutarTablaMultiplicar()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Primeros 10 números pares:</strong> 
+                    <button onclick="ejecutarPrimerosPares()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Pedir números hasta número negativo:</strong> 
+                    <button onclick="ejecutarPedirNumeros()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Contar letras 'a' en una palabra:</strong> 
+                    <button onclick="ejecutarContarAEnPalabra()">Ejecutar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Objetos -->
+        <section id="objetos">
+            <h2>Objetos</h2>
+            <ul>
+                <li>
+                    <strong>Objeto Persona:</strong> 
+                    <button onclick="ejecutarMostrarPersona()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Objeto Coche:</strong> 
+                    <button onclick="ejecutarMostrarCoche()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Objeto Rectángulo:</strong> 
+                    <button onclick="ejecutarCalcularAreaRectangulo()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Objeto Libro:</strong> 
+                    <button onclick="ejecutarMostrarLibro()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Objeto Usuario:</strong> 
+                    <button onclick="ejecutarVerificarUsuario()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Objeto Gato:</strong> 
+                    <button onclick="ejecutarMostrarGato()">Ejecutar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Arrays -->
+        <section id="arrays">
+            <h2>Arrays</h2>
+            <ul>
+                <li>
+                    <strong>Array con 5 números:</strong> 
+                    <button onclick="ejecutarMostrarPrimerUltimo()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Array con ciudades:</strong> 
+                    <button onclick="ejecutarMostrarSegundaCiudad()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Suma de 5 números:</strong> 
+                    <button onclick="ejecutarSumarArray()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Recorrer y mostrar 5 palabras:</strong> 
+                    <button onclick="ejecutarMostrarPalabras()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Pedir 5 nombres y almacenarlos:</strong> 
+                    <button onclick="ejecutarPedirNombres()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Contar números mayores a 50:</strong> 
+                    <button onclick="ejecutarContarMayores50()">Ejecutar</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Arrays de Objetos -->
+        <section id="arrays-objetos">
+            <h2>Arrays de Objetos</h2>
+            <ul>
+                <li>
+                    <strong>Array de personas:</strong> 
+                    <button onclick="ejecutarMostrarPersonasArray()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Array de coches:</strong> 
+                    <button onclick="ejecutarMostrarCochesArray()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Array de productos:</strong> 
+                    <button onclick="ejecutarMostrarProductosArray()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Array de alumnos:</strong> 
+                    <button onclick="ejecutarMostrarAprobados()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Array de libros:</strong> 
+                    <button onclick="ejecutarMostrarLibros()">Ejecutar</button>
+                </li>
+                <li>
+                    <strong>Array de películas:</strong> 
+                    <button onclick="ejecutarMostrarPeliculas()">Ejecutar</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ejemplos de JavaScript</p>
+    </footer>
+
+    <!-- Enlace al archivo de JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
+

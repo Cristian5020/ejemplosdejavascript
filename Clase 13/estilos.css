@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+pre {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    background-color: #acacac; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Comportamiento en línea */
+    font-size: 12px; /* Tamaño de fuente */
+    margin: 4px; /* Espaciado externo */
+    border-radius: 12px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo cuando el mouse pasa por encima */
+}
+
+input[type="number"] {
+    width: 6%;  /* Tamaño completo */
+    padding: 3px;
+    border: 3px solid #acacac; /* Bordes grises */
+    border-radius: 10px;  /* Bordes redondeados */
+    font-size: 15px; /* Tamaño de texto */
+    transition: border-color 0.3s; /* Animación de borde */
+}
+
+input[type="number"]:focus {
+    border-color: #45a049;  /* Cambio de color de borde al hacer foco */
+    outline: none;  /* Elimina el borde azul de enfoque por defecto */
+}
+input[type="number"]:valid {
+    background-color: #b3ebc0;  /* Color de fondo verde claro cuando está lleno */
+    border-color: #45a049;  /* Borde verde */
+}
